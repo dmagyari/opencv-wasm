@@ -1,0 +1,12 @@
+diff --git a/platforms/js/opencv_js.config.py b/platforms/js/opencv_js.config.py
+index 6e4677f..416af54 100644
+--- a/platforms/js/opencv_js.config.py
++++ b/platforms/js/opencv_js.config.py
+@@ -35,6 +35,7 @@ dnn = {'dnn_Net': ['setInput', 'forward'],
+             'readNetFromONNX', 'readNet', 'blobFromImage']}
+ 
+ features2d = {'Feature2D': ['detect', 'compute', 'detectAndCompute', 'descriptorSize', 'descriptorType', 'defaultNorm', 'empty', 'getDefaultName'],
++              'SIFT': ['create', 'getDefaultName'],
+               'BRISK': ['create', 'getDefaultName'],
+               'ORB': ['create', 'setMaxFeatures', 'setScaleFactor', 'setNLevels', 'setEdgeThreshold', 'setFirstLevel', 'setWTA_K', 'setScoreType', 'setPatchSize', 'getFastThreshold', 'getDefaultName'],
+               'MSER': ['create', 'detectRegions', 'setDelta', 'getDelta', 'setMinArea', 'getMinArea', 'setMaxArea', 'getMaxArea', 'setPass2Only', 'getPass2Only', 'getDefaultName'],
