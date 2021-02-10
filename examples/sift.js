@@ -12,10 +12,8 @@ const { cv } = require('../'); // replace with require('opencv-wasm') in prod
     const sift = new cv.SIFT();
     sift.detectAndCompute(src, new cv.Mat(), kp, descriptors);
     
-	const dst = new cv.Mat();
-    cv.drawKeypoints(src, kp, dst, cv.DrawMatchesFlags_DRAW_RICH_KEYPOINTS);
-
-    console.log('aaa')
+    const dst = new cv.Mat();
+    cv.drawKeypoints(src, kp, dst/*, cv.DrawMatchesFlags_DRAW_RICH_KEYPOINTS*/);
 
     new Jimp({
         width: dst.cols,
